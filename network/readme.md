@@ -28,7 +28,7 @@ DOMAIN="domain.com"
 SUBDOMAINS = ["www", "another_subdomain"]
 ```
 
-## Add script to crontab
+## Add bash script to crontab
 
 open crontab editor
 ```bash 
@@ -45,4 +45,27 @@ add this line to the end of file.
 This will run the script every 5min
 ```bash
 */5 * * * * /bin/bash  /path_to_file/cloudflare-dns-updater.sh >> /path_to_logfile/domain_status.txt 2>&1
+```
+
+save the file
+```
+ctrl + x 
+```
+
+## Add pyhton script to crontab
+
+open crontab editor
+```bash 
+sudo crontab -e
+```
+
+add this line to the end of file.
+This will run the script every 5min
+```bash
+*/5 * * * * /usr/bin/python3 /path_to_file/one.com-dns-updater.py
+```
+
+save the file
+```
+ctrl + x 
 ```
