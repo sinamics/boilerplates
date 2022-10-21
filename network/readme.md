@@ -53,7 +53,7 @@ add this line to the end of file.
 This will run the script every 5min
 
 ```bash
-*/5 * * * * /usr/bin/python3 cloudflare-dns-updater.py domain.com >> cf.log
+*/5 * * * * /usr/bin/python3 cloudflare-dns-updater.py domain.com > cf.log
 ```
 
 save the file
