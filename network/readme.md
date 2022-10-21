@@ -4,7 +4,31 @@ A bash script to update a Cloudflare DNS A record with the external IP of the so
 Used to provide DDNS service for my home
 Needs the DNS record pre-creating on Cloudflare
 
-### Add script to crontab
+Edit the file and add your cloudflare crendentials:
+```bash
+zone=domain.com
+dnsrecord=domain.com
+cloudflare_auth_email=your_email@mail.com
+cloudflare_auth_key=your_cloudflare_api_key
+```
+
+# one.com-dns-updater.py
+A python script to update a one.com DNS A record with the external IP of the source machine.  
+Used to provide DDNS service for my home
+Needs the DNS record pre-creating on one.com
+
+Edit the file and add your one.com crendentials:
+```python
+# YOUR ONE.COM LOGIN
+USERNAME="mail@mail.com"
+PASSWORD="password"
+DOMAIN="domain.com"
+
+# LIST OF SUBDOMAINS YOU WANT POINTING TO YOUR IP
+SUBDOMAINS = ["www", "another_subdomain"]
+```
+
+## Add script to crontab
 
 open crontab editor
 ```bash 
