@@ -4,6 +4,16 @@ A python script to update a Cloudflare DNS A record with the external IP of the 
 Used to provide DDNS service for my home
 Needs the DNS record pre-creating on Cloudflare
 
+Install python3 & pip3
+```bash
+apt install python3 python3-pip
+```
+
+Install cloudflare python api
+```bash
+sudo pip3 install cloudflare
+```
+
 Edit the file and add your cloudflare crendentials:
 ```python
 CLOUDFLARE_API_KEY="your_api_key"
