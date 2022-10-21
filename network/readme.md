@@ -4,7 +4,7 @@ A bash script to update a Cloudflare DNS A record with the external IP of the so
 Used to provide DDNS service for my home
 Needs the DNS record pre-creating on Cloudflare
 
-## Add script to crontab
+### Add script to crontab
 
 open crontab editor
 ```bash 
